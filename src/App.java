@@ -1,13 +1,16 @@
+
 import java.util.Locale;
 import java.util.Scanner;
 import com.nataniel.aula.Calcular;
+import com.nataniel.aula.Saudar;
 
 public class App {
     public static void main(String[] args) throws Exception {
         Scanner entrada = new Scanner(System.in).useLocale(Locale.US);
         String operacao = "";
+        Saudar.Saudacao();
         System.out.println("Digite a operação desejada:\nsomar ( + )\nsubtrair ( - )\nmultiplicar ( * )\ndividir ( / )");
-        
+
         do{
             operacao = entrada.next();
         }        
